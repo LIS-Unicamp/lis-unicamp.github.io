@@ -1,0 +1,17 @@
+/*
+Theme Name: LIS
+Theme URI: http://www.lis.ic.unicamp.br/
+Description: A Wordpress theme for Laboratory of Information Systems of the Institute of Computing (IC) at the University of Campinas (UNICAMP).
+Version: 1.1
+Author: Kazap
+Author URI: http://kazap.com.br
+Tags: black, white, one-column, two-columns, flexible-width, custom-background, custom-colors, custom-menu, full-width-template, theme-options
+License: GNU General Public License v2.0 & Apache License 2.0
+License URI: http://www.gnu.org/licenses/gpl-2.0.html http://www.apache.org/licenses/LICENSE-2.0
+*/
+
+/* HEADS UP: Everything that you will normally find here can be found in the library/less/wp.less */
+
+/* Apply base theme styles and colors */
+@import url( 'library/css/style.css' );
+@import url( '//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css' );
