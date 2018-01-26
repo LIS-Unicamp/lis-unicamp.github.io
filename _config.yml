@@ -1,5 +1,2 @@
 exclude:
   - .git/
-  - assets/
-  - wp-includes/
-  - wp-content/
