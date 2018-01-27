@@ -10,7 +10,7 @@
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-		<title>LIS | People - LIS</title>
+		<title>{% if page.title != "" %}LIS | {{ page.title }}{% else %}Laboratory of Information Systems (LIS) | Home{% endif %}</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 				
 		<!-- media-queries.js (fallback) -->
@@ -109,6 +109,7 @@ var rlArgs = {"script":"swipebox","selector":"lightbox","customEvents":"","activ
 		              </div>
 		            </div>
 		            <div class='row menu'>
+		            	<!--
 		              	<div class='search visible-xs'>
 		                  		                  <form class="navbar-form navbar-right" role="search" method="get" id="searchform" action="/">
 		                    <div class='form-group'>
@@ -117,8 +118,8 @@ var rlArgs = {"script":"swipebox","selector":"lightbox","customEvents":"","activ
 		                    </div>
 		                    <button class='btn btn-default' type='submit'>ok</button>
 		                  </form>
-		                  		            	</div>
-		                
+  		            	</div>
+		                -->
 		              <div class='navbar-header'>
 		                <button class='navbar-toggle' data-target='.navbar-collapse' data-toggle='collapse' type='button'>
 		                  <span class='sr-only'>Toggle navigation</span>
@@ -129,22 +130,22 @@ var rlArgs = {"script":"swipebox","selector":"lightbox","customEvents":"","activ
 		              </div>
 		              <div class='navbar-collapse collapse'>
 		                <ul id="menu-principal" class="nav navbar-nav"><li id="menu-item-24" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home"><a href="/">home</a></li>
-<li id="menu-item-513" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/?page_id=508">About</a></li>
-<li id="menu-item-19" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-10 current_page_item active"><a href="/people.html">People</a></li>
-<li id="menu-item-23" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/?page_id=20">Research Areas</a></li>
+<li id="menu-item-513" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/about/">About</a></li>
+<li id="menu-item-19" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-10 current_page_item active"><a href="/people/">People</a></li>
+<li id="menu-item-23" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/research-areas/">Research Areas</a></li>
 <li id="menu-item-515" class="dropdown menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children"><a>Projects<b class="caret"></b></a>
 <ul class="dropdown-menu">
-	<li id="menu-item-542" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/?page_id=540">Current Projects</a></li>
-	<li id="menu-item-31" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/?page_id=29">Past Projects</a></li>
+	<li id="menu-item-542" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/current-projects/">Current Projects</a></li>
+	<li id="menu-item-31" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/past-projects/">Past Projects</a></li>
 </ul>
 </li>
-<li id="menu-item-68" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/?page_id=63">Publications</a></li>
-<li id="menu-item-51" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/?page_id=45">Cooperation</a></li>
-<li id="menu-item-50" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/?page_id=48">Seminars</a></li>
-<li id="menu-item-59" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/?page_id=55">Gallery</a></li>
-</ul>		                <div class='visible-xs navbar-collapse'>
+<li id="menu-item-68" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/publications/">Publications</a></li>
+<li id="menu-item-51" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/cooperation/">Cooperation</a></li>
+<li id="menu-item-50" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/calendar/">Seminars</a></li>
+<li id="menu-item-59" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/gallery/">Gallery</a></li>
+</ul>		                <!--<div class='visible-xs navbar-collapse'>
 			              <div class="second_nav clearfix"><ul id="menu-secundary-1" class="nav navbar-nav"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-80"><a href="/?page_id=70">Contact</a></li>
-</ul></div>			          </div>
+</ul></div>		-->	          </div>
 		              </div>
 		              
 		            </div>
@@ -159,8 +160,42 @@ var rlArgs = {"script":"swipebox","selector":"lightbox","customEvents":"","activ
 		
 		<div class="container">
 			<div id="content" class="clearfix row">
-			{{ content }}
+				{% if page.title != "" %}
+					<div class="breadcrumbs" xmlns:v="http://rdf.data-vocabulary.org/#"><a href="/" rel="v:url" property="v:title">Home</a> &raquo; <span class="current">People</span></div><!-- .breadcrumbs -->
+						<div id="main" class="col-sm-12 clearfix" role="main">
 
+												
+							<article id="post-10" class="clearfix post-10 page type-page status-publish hentry" role="article" >
+								
+								<header>
+									
+									<div class="page-header"><h1 class="page-title" itemprop="headline">People</h1></div>
+								
+								</header> <!-- end article header -->
+							
+								<section class="post_content clearfix" itemprop="articleBody">
+											
+				{% endif %}
+				{{ content }}
+				{% if page.title != "" %}
+								</section> <!-- end article section -->
+					
+						
+						<footer>
+			
+														
+						</footer> <!-- end article footer -->
+					
+					</article> <!-- end article -->
+					
+					
+							
+					
+								
+				</div> <!-- end #main -->
+				{% endif %}
+    
+			</div> <!-- end #content -->
 			<div class="push"></div>
 			</div>
         </div>
