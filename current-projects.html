@@ -1,0 +1,29 @@
+---
+layout: default
+title: Current Projects
+description: 'Researchers, collaborators, students and alumni of our Lab.'
+category: current-projects
+---
+<ul id='subpages'>
+    <li class="pagenav"> 
+    	<ul>
+		  {% for post in site.categories[page.category] %}
+		    		<li class="page_item page-item-818">
+		    			<h3><i class="fa fa-level-up"></i><a href="{{ post.url }}">{{ post.title }}</a></h3>
+		    			<div class='resume'>{{ post.excerpt }}</div>
+		    		</li>
+		    </li>
+		  {% endfor %}
+	  </ul>
+	</li>
+</ul>
+<ul id='subpages'><li class="pagenav"> <ul><li class="page_item page-item-818"><h3><i class="fa fa-level-up"></i><a href="/current-projects/experiment-reproducibility-and-workflow-management/">Experiment reproducibility and workflow management</a></h3><div class='resume'>The goal of this project is to develop a data infrastructure supporting sharing, reuse and reproducibility of data and models. The idea is to adopt the notion of scientific workflows as the basis to specify executable models, and create a common computational platform to design, annotate and reuse such workflows. This infrastructure will provide a common data infrastructure to all researchers in the Center for Computational Engineering &amp; Sciences (CCES) (a.k.a. eScience Unicamp). The CCES scientists will test/apply the data and models used and/or produced by the Center in the infrastructure.</div></li>
+<li class="page_item page-item-611"><h3><i class="fa fa-level-up"></i><a href="http://localhost/sitelis/?page_id=611">Graph-Kaleidoscope: Handling Multiple Perspectives in Graph Databases</a></h3><div class='resume'>The goal of this project is to specify and implement a framework that allows to build multiple perspectives, and correlate these perspectives and resources using graphs as the main underlying representation. Perspectives are defined following an adaptation of the concept of views in relational databases – i.e., each perspective is handled as a view in the graph database. Following relational theory, a graph view is defined in terms of a view generating function: a combination of operations that represents queries applied to existing database objects – i.e., vertices and edges.  Since there is no consensus on a formal definition of graph data model, the first challenge addressed by our research was to formalize the operators for graph data that underpins our framework. As a result, we define PGDM – a property graph data model – together with its operators. For uniformity, all results of graph operators in PGDM are graphs. Our second contribution lies in the definition of the framework itself, based on the use of PGDM.</div></li>
+<li class="page_item page-item-113"><h3><i class="fa fa-level-up"></i><a href="http://localhost/sitelis/?page_id=113">MediaBank</a></h3><div class='resume'>Producing and Publishing Component-based Digital Content Building Blocks</div></li>
+<li class="page_item page-item-25"><h3><i class="fa fa-level-up"></i><a href="http://localhost/sitelis/?page_id=25">NavScales &#8211; Navigating through scales in space, time and knowledge domains</a></h3><div class='resume'>Research on climate change necessarily involves integration of data collected at multiple scales on space and time, as well as interaction and cooperation of people from very many disciplines, scientific profiles and backgrounds. The same kind of scenario occurs in many other research initiatives -- e.g., in health (where integrated studies require analysis from molecule to human and back).</div></li>
+<li class="page_item page-item-986"><h3><i class="fa fa-level-up"></i><a href="http://localhost/sitelis/?page_id=986">Semantic Interoperability of Clinical Data</a></h3><div class='resume'>Project Overview
+The same patient visits different health center for many reasons, such as to treat another medical specialty or due to geographic displacement. Access patient's medical history requires data sharing among healthcare centers. The ability to exchange data among computational systems is called data interoperability. Besides technical issues, clinical data interoperability is moreover hampered by ethical and security issues, by the absence of consensus about standards and terminology, and by...</div></li>
+<li class="page_item page-item-908"><h3><i class="fa fa-level-up"></i><a href="http://localhost/sitelis/?page_id=908">Supporting Data Quality Assessment in eScience</a></h3><div class='resume'>Supporting Quality Assessment</div></li>
+<li class="page_item page-item-891"><h3><i class="fa fa-level-up"></i><a href="http://localhost/sitelis/?page_id=891">Use of graphs and taxonomic classifications to analyze content relationships among courseware</a></h3><div class='resume'>The goal of this project is to design and develop a suite of tools to assist users to find, analyze and select pieces of educational content that are relevant to their learning goals. Contributions will be both at the algorithm and software design level, and at the user (application) level. </div></li>
+<li class="page_item page-item-626"><h3><i class="fa fa-level-up"></i><a href="http://localhost/sitelis/?page_id=626">WASIS – Wildlife Animal Sound Identification System</a></h3><div class='resume'>WASIS (Wildlife Animal Sound Identification System) is a public-domain software that recognizes animal species based on their sounds. From a partnership between Laboratory of Information Systems (LIS) and Fonoteca Neotropical Jacques Vielliard (FNJV) of the Institute of Biology of the University of Campinas (UNICAMP) as part of the NavScales project, the main goal of this project is to design a tool which supports multiple algorithms to help scientists and general public on the identification of species.</div></li>
+</ul></li></ul>
