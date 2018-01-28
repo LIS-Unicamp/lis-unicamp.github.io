@@ -1,0 +1,57 @@
+---
+layout: default
+title: "Graph-Kaleidoscope: Handling Multiple Perspectives in Graph Databases"
+category: current-projects
+permalink: /:categories/:title/
+
+excerpt: "The goal of this project is to specify and implement a framework that allows to build multiple perspectives, and correlate these perspectives and resources using graphs as the main underlying representation. Perspectives are defined following an adaptation of the concept of views in relational databases – i.e., each perspective is handled as a view in the graph database. Following relational theory, a graph view is defined in terms of a view generating function: a combination of operations that represents queries applied to existing database objects – i.e., vertices and edges.  Since there is no consensus on a formal definition of graph data model, the first challenge addressed by our research was to formalize the operators for graph data that underpins our framework. As a result, we define PGDM – a property graph data model – together with its operators. For uniformity, all results of graph operators in PGDM are graphs. Our second contribution lies in the definition of the framework itself, based on the use of PGDM."
+
+description: "To specify and implement a framework that allows to build multiple perspectives, and correlate these perspectives and resources using graphs as the main underlying representation. Perspectives are defined following an adaptation of the concept of views in relational databases – i.e., each perspective is handled as a view in the graph database. Following relational theory, a graph view is defined in terms of a view generating function: a combination of operations that represents queries applied to existing database objects – i.e., vertices and edges.  Since there is no consensus on a formal definition of graph data model, the first challenge addressed by our research was to formalize the operators for graph data that underpins our framework. As a result, we define PGDM – a property graph data model – together with its operators. For uniformity, all results of graph operators in PGDM are graphs. Our second contribution lies in the definition of the framework itself, based on the use of PGDM."
+---
+<h4><strong>People involved:</strong></h4>
+<p>Jaudete Daltio</p>
+<h4><strong>Person in charge:</strong></h4>
+<p><a href="http://www.ic.unicamp.br/~cmbm">Claudia Bauzer Medeiros</a></p>
+<h2><span style="color: #008080;"><strong>Project Overview</strong></span></h2>
+<p>To specify and implement a framework that allows to build multiple perspectives, and correlate these perspectives and resources using graphs as the main underlying representation. Perspectives are defined following an adaptation of the concept of views in relational databases – i.e., each perspective is handled as a view in the graph database. Following relational theory, a graph view is defined in terms of a view generating function: a combination of operations that represents queries applied to existing database objects – i.e., vertices and edges. Since there is no consensus on a formal definition of graph data model, the first challenge addressed by our research was to formalize the operators for graph data that underpins our framework. As a result, we define PGDM – a property graph data model – together with its operators. For uniformity, all results of graph operators in PGDM are graphs. Our second contribution lies in the definition of the framework itself, based on the use of PGDM.</p>
+<div class='bs-docs-example'>
+    <ul class='nav nav-tabs' id='myTab'>
+        <li><a data-toggle='tab' href='#Goals'>Goals</a></li>
+        <li><a data-toggle='tab' href='#Publications'>Publications</a></li>
+        <li><a data-toggle='tab' href='#CaseStudy-BrazilianWaterResourcesDatabase'>Case Study - Brazilian Water Resources Database</a></li>
+    </ul>
+    <div class="tab-content" id="myTabContent">
+        <div id='Goals' class='tab-pane'>
+            <p>To solve problems of multi-perspective research in applications that are characterized by inter-disciplinarity (and thus multiple ways of analyzing a problem) by using of graph databases to store and analyze datasets of highly connected data and adapting the concept of views from relational databases to represent the idea of focus.</p>
+            <p>&nbsp;</p>
+        </div>
+        <div id='Publications' class='tab-pane'>
+            <p class="tp_pub_author"><strong>2017</strong></p>
+            <p class="tp_pub_author">Daltio, Jaudete; Medeiros, Claudia Bauzer</p>
+            <p class="tp_pub_title"><a href="/wp-content/uploads/2017/12/jaudete_daltio_tese.pdf"><span class="tp_pub_typ">Views over Graph Databases: A Multifocus Approach for Heterogeneous Data (PhD Thesis)</span></a></p>
+            <p class="tp_pub_additional"><span class="tp_pub_additional_address"><span class="tp_pub_additional_school">University of Campinas - Institute of Computing, </span><span class="tp_pub_additional_year">2017</span>.</span>
+            </p>
+            <p class="tp_pub_author"><strong>2016</strong></p>
+            <p class="tp_pub_author">Daltio, Jaudete; Medeiros, Claudia Bauzer</p>
+            <p class="tp_pub_title"><a href="/wp-content/uploads/2016/02/PID4045125.pdf"> A View Handler for Semantic Graphs <span class="tp_pub_typ">(Conference)</span></a></p>
+            <p class="tp_pub_additional"><span class="tp_pub_additional_publisher">Proceedings 10th IEEE ICSC, </span><span class="tp_pub_additional_address"> Los Angeles, </span><span class="tp_pub_additional_year">2016</span>.</p>
+            <p class="tp_pub_additional"><strong>2015</strong></p>
+            <p class="tp_pub_author">Daltio, Jaudete; Medeiros, Claudia Bauzer</p>
+            <p class="tp_pub_title"><a href="/wp-content/uploads/2016/02/daltio_medeiros_geoinfo.pdf">Hydrograph: Exploring Geographic Data in Graph Databases <span class="tp_pub_typ">(Conference)</span></a></p>
+            <p class="tp_pub_additional"><span class="tp_pub_additional_booktitle"> XVI Brazilian Symposium on Geoinformatics (GEOINFO), </span><span class="tp_pub_additional_address">Campos do Jordao, </span><span class="tp_pub_additional_year">2015</span>.</p>
+            <p class="tp_pub_tags"><strong>2014</strong></p>
+            <p class="tp_pub_author">Daltio, Jaudete; Medeiros, Claudia Bauzer</p>
+            <p class="tp_pub_title"><a href="/wp-content/uploads/2015/04/Handling-Multiple-Foci-in-Graph-Databases.pdf">Handling Multiple Foci in Graph Databases <span class="tp_pub_typ">(Conference)</span></a></p>
+            <p class="tp_pub_additional"><span class="tp_pub_additional_booktitle">Lecture Notes in Bioinformatics (LNBI) - Proceedings of 10th International Conference on Data Integration in the Life Sciences, </span><span class="tp_pub_additional_volume">8574 Lisboa, Portugal, </span><span class="tp_pub_additional_year">2014</span>.</p>
+        </div>
+        <div id='CaseStudy-BrazilianWaterResourcesDatabase' class='tab-pane'>
+            <p>To organize the data and support management tasks, Brazilian National Water Agency (ANA) constructed a relational database to manage Brazilian water resources, representing the hydrography as a drainage network, i.e., a set of drainage points and stretches. This network is represented as a binary tree-graph whose edges (i.e., the drainage stretches)
+                <br /> go from upstream to downstream.</p>
+            <p>The Brazilian drainage network is currently composed by 620.280 drainage points and 620.279 drainage stretches. Drainage points represent diverse geographic entities, such as a watercourse start/end point or a stream mouth point. The drainage stretches represent only one geographic entity – the connection between two drainage points.</p>
+            <p>Despite this organization, the official territorial unit for the management of water resources adopted by ANA is a watershed. A watershed delimits a drainage system channel and comprises a set of drainage stretches and points. The drainage network can be repeatedly split given rise to watershed and sub-watersheds. Another element in this database is rivers – connected drainage stretches that have the same waterbody name.</p>
+            <p>Rivers and watersheds are only examples of the many useful elements that need to be derived from this water resources database. These elements are calculated based on drainage network attributes and, once data is updated, they may change. Updates occur, for instance, to reflect human actions (e.g., by river transposition or construction of artificial channels), natural disasters or cartographic refinement process (more accurate scales).</p>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+        </div>
+    </div>
+</div>
