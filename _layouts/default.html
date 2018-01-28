@@ -5,7 +5,7 @@
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-		<title>{% if page.title %}LIS | {{ page.title }}{% else %}Laboratory of Information Systems (LIS) | Home{% endif %}</title>
+		<title>{{ page.title | default: "Home" }} | LIS</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="description" content="{{ page.description | default: 'The Laboratory of Information Systems (LIS) is part of the the Institute of Computing (IC) at the University of Campinas (UNICAMP).' }}">
 				
@@ -92,19 +92,19 @@ var rlArgs = {"script":"swipebox","selector":"lightbox","customEvents":"","activ
 		              <div class='navbar-collapse collapse'>
 		                <ul id="menu-principal" class="nav navbar-nav">
 		                	<li id="menu-item-24" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home {% if page.url == "/" %}active"{% endif %}"><a href="/">home</a></li>
-							<li id="menu-item-513" class="menu-item menu-item-type-post_type menu-item-object-page {% if page.url == "/about.html" %}current-menu-item page_item current_page_item active{% endif %}"><a href="/about/">About</a></li>
-							<li id="menu-item-19" class="menu-item menu-item-type-post_type menu-item-object-page {% if page.url == "/people.html" %}current-menu-item page_item current_page_item active{% endif %}"><a href="/people/">People</a></li>
-							<li id="menu-item-23" class="menu-item menu-item-type-post_type menu-item-object-page {% if page.url == "/research-areas.html" %}current-menu-item page_item current_page_item active{% endif %}"><a href="/research-areas/">Research Areas</a></li>
+							<li id="menu-item-513" class="menu-item menu-item-type-post_type menu-item-object-page {% if page.url == "/about/" %}current-menu-item page_item current_page_item active{% endif %}"><a href="/about/">About</a></li>
+							<li id="menu-item-19" class="menu-item menu-item-type-post_type menu-item-object-page {% if page.url == "/people/" %}current-menu-item page_item current_page_item active{% endif %}"><a href="/people/">People</a></li>
+							<li id="menu-item-23" class="menu-item menu-item-type-post_type menu-item-object-page {% if page.url == "/research-areas/" %}current-menu-item page_item current_page_item active{% endif %}"><a href="/research-areas/">Research Areas</a></li>
 							<li id="menu-item-515" class="dropdown menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children"><a>Projects<b class="caret"></b></a>
 							<ul class="dropdown-menu">
-								<li id="menu-item-542" class="menu-item menu-item-type-post_type menu-item-object-page {% if page.url == "/current-projects.html" %}current-menu-item page_item current_page_item active{% endif %}"><a href="/current-projects/">Current Projects</a></li>
-								<li id="menu-item-31" class="menu-item menu-item-type-post_type menu-item-object-page {% if page.url == "/past-projects.html" %}current-menu-item page_item current_page_item active{% endif %}"><a href="/past-projects/">Past Projects</a></li>
+								<li id="menu-item-542" class="menu-item menu-item-type-post_type menu-item-object-page {% if page.url == "/current-projects/" %}current-menu-item page_item current_page_item active{% endif %}"><a href="/current-projects/">Current Projects</a></li>
+								<li id="menu-item-31" class="menu-item menu-item-type-post_type menu-item-object-page {% if page.url == "/past-projects/" %}current-menu-item page_item current_page_item active{% endif %}"><a href="/past-projects/">Past Projects</a></li>
 							</ul>
 							</li>
-							<li id="menu-item-68" class="menu-item menu-item-type-post_type menu-item-object-page {% if page.url == "/publications.html" %}current-menu-item page_item current_page_item active{% endif %}"><a href="/publications/">Publications</a></li>
-							<li id="menu-item-51" class="menu-item menu-item-type-post_type menu-item-object-page {% if page.url == "/cooperation.html" %}current-menu-item page_item current_page_item active{% endif %}"><a href="/cooperation/">Cooperation</a></li>
-							<li id="menu-item-50" class="menu-item menu-item-type-post_type menu-item-object-page {% if page.url == "/seminars.html" %}current-menu-item page_item current_page_item active{% endif %}"><a href="/calendar/">Seminars</a></li>
-							<li id="menu-item-59" class="menu-item menu-item-type-post_type menu-item-object-page {% if page.url == "/gallery.html" %}current-menu-item page_item current_page_item active{% endif %}"><a href="/gallery/">Gallery</a></li>
+							<li id="menu-item-68" class="menu-item menu-item-type-post_type menu-item-object-page {% if page.url == "/publications/" %}current-menu-item page_item current_page_item active{% endif %}"><a href="/publications/">Publications</a></li>
+							<li id="menu-item-51" class="menu-item menu-item-type-post_type menu-item-object-page {% if page.url == "/cooperation/" %}current-menu-item page_item current_page_item active{% endif %}"><a href="/cooperation/">Cooperation</a></li>
+							<li id="menu-item-50" class="menu-item menu-item-type-post_type menu-item-object-page {% if page.url == "/seminars/" %}current-menu-item page_item current_page_item active{% endif %}"><a href="/calendar/">Seminars</a></li>
+							<li id="menu-item-59" class="menu-item menu-item-type-post_type menu-item-object-page {% if page.url == "/gallery/" %}current-menu-item page_item current_page_item active{% endif %}"><a href="/gallery/">Gallery</a></li>
 						</ul>		                
 			          </div>
 		              </div>
@@ -124,9 +124,9 @@ var rlArgs = {"script":"swipebox","selector":"lightbox","customEvents":"","activ
 				{% if page.title %}
 					<div class="breadcrumbs" xmlns:v="http://rdf.data-vocabulary.org/#">
 						<a href="/" rel="v:url" property="v:title">Home</a>  						
-						{% if page.category == "current-projects" %}
+						{% if page.category == "current-projects" and page.url != "/current-projects/" %}
 						&raquo; <a rel="v:url" property="v:title" href="/current-projects/">Current Projects</a>
-						{% elsif page.category == "past-projects" %}
+						{% elsif page.category == "past-projects" and page.url != "/past-projects/" %}
 						&raquo; <a rel="v:url" property="v:title" href="/past-projects/">Past Projects</a>
 						{% endif %}
 						&raquo; <span class="current">{{ page.title }}</span>

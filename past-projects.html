@@ -1,21 +1,19 @@
 ---
 layout: default
-title: Current Projects
+title: Past Projects
 description: 'Past projects our Lab.'
 category: past-projects
 ---
-<ul id='subpages'><li class="pagenav"> <ul><li class="page_item page-item-493"><h3><i class="fa fa-level-up"></i><a href="/?page_id=493">AMIB &#8211; Algorithms to Manage Images in Biodiversity research</a></h3><div class='resume'>Homepage:
-http://www.lis.ic.unicamp.br
-Funding Institutions:
-CAPES - COFECUB
-
-People involved:
-
-Person in charge:
-Claudia Bauzer Medeiros</div></li>
-<li class="page_item page-item-39"><h3><i class="fa fa-level-up"></i><a href="/?page_id=39">Biocore</a></h3><div class='resume'>The goal of the project is to specify and develop computational tools to allow biodiversity researchers to manage and share data, helping them in the construction of complex models and in ecosystems  modeling, including the discovery of relationships and interactions between species. Based on Web services, these tools will help support  the cooperation between researchers in biological sciences belonging to groups with different interests and vocabularies.</div></li>
-<li class="page_item page-item-111"><h3><i class="fa fa-level-up"></i><a href="/?page_id=111">eFarms &#8211; a two-way road from small farms to the networked world</a></h3><div class='resume'>Multidisciplinary project combining research in Computer Science and Agriculture. Funded by the FAPESP-Microsoft Research Virtual Institute. </div></li>
-<li class="page_item page-item-491"><h3><i class="fa fa-level-up"></i><a href="/?page_id=491">Managing satellite image databases for agro-environmental monitoring</a></h3><div class='resume'>Managing satellite image databases</div></li>
-<li class="page_item page-item-649"><h3><i class="fa fa-level-up"></i><a href="/?page_id=649">Ts3Annotation</a></h3><div class='resume'>TS3Annotation: A framework for semantic annotation and time series search</div></li>
-<li class="page_item page-item-115"><h3><i class="fa fa-level-up"></i><a href="/?page_id=115">WeBIOS</a></h3><div class='resume'>The goal of the project is to provide scientists who work in environmental/biodiversity issues with a system that supports exploratory multimodal queries over heterogeneous biodiversity data sources. These sources include images (photos of living beings or their habitats), geographic data, ontologies, domain-specific metadata, as well as data on collections, species and so on. </div></li>
-</ul></li></ul>
+<ul id='subpages'>
+    <li class="pagenav"> 
+    	<ul>
+		  {% for post in site.categories[page.category] %}
+		    		<li class="page_item page-item-818">
+		    			<h3><i class="fa fa-level-up"></i><a href="{{ post.url }}">{{ post.title }}</a></h3>
+		    			<div class='resume'>{{ post.excerpt }}</div>
+		    		</li>
+		    </li>
+		  {% endfor %}
+	  </ul>
+	</li>
+</ul>

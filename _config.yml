@@ -1,4 +1,6 @@
 permalink: /:categories/:title/
+plugins:
+  - jekyll-redirect-from
 exclude:
   - .git/
   - .php
