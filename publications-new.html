@@ -1,0 +1,57 @@
+---
+layout: default
+title: Publications
+description: 'Publications of our Lab.'
+category: publications
+---
+<blockquote>
+<h5>COPYRIGHT NOTICE</h5>
+<h5>Some documents distributed by this site have been provided by the contributing authors as a means to ensure timely dissemination of scholarly and technical work on a noncommercial basis. Copyright and all rights therein are maintained by the authors or by other copyright holders, notwithstanding that they have offered their works here electronically. It is understood that all persons copying this information will adhere to the terms and constraints invoked by each author&#8217;s copyright. These works may not be reposted without the explicit permission of the copyright holder.</h5>
+</blockquote>
+
+<ul id='subpages'>
+    <li class="pagenav">
+        <ul>
+            {% for post in site.categories[page.category] %}
+            <tr>
+                <td>
+                    <h3 class="tp_h3">{{ post.year }}</h3></td>
+            </tr>
+            <tr class="tp_publication">
+                <td class="tp_pub_info">
+                    <p class="tp_pub_author">{{ post.authors }}</p>
+                    <p class="tp_pub_title"><a class="tp_title_link" onclick="teachpress_pub_showhide('447','tp_links')" style="cursor:pointer;">{{ post.title }}</a> <span class="tp_pub_typ">({{ post.type }})</span></p>
+                    <p class="tp_pub_additional">
+                    	<span class="tp_pub_additional_booktitle">{{ post.booktitle }}, </span>
+                    	<span class="tp_pub_additional_year">{{ post.year }}</span>.
+                    </p>
+                    <p class="tp_pub_tags">(<a id="tp_abstract_sh_447" class="tp_show" onclick="teachpress_pub_showhide('447','tp_abstract')" title="Show abstract" style="cursor:pointer;">Abstract</a> | <a id="tp_links_sh_447" class="tp_show" onclick="teachpress_pub_showhide('447','tp_links')" title="Show links and resources" style="cursor:pointer;">Links</a> | <a id="tp_bibtex_sh_447" class="tp_show" onclick="teachpress_pub_showhide('447','tp_bibtex')" style="cursor:pointer;" title="Show BibTeX entry">BibTeX</a> | Tags: 
+                    	{% for tag in post.tags %}
+                        {{ tag }}{% if forloop.last == false %},{% endif %}
+                    {% endfor %})</p>
+                    <div class="tp_bibtex" id="tp_bibtex_447" style="display:none;">
+                        <div class="tp_bibtex_entry">
+                            <pre>
+                            	{{ post.content }}
+                        	</pre>
+                        </div>
+                        <p class="tp_close_menu"><a class="tp_close" onclick="teachpress_pub_showhide('447','tp_bibtex')">Close</a></p>
+                    </div>
+                    <div class="tp_abstract" id="tp_abstract_447" style="display:none;">
+                        <div class="tp_abstract_entry">{{ post.abstract }}</div>
+                        <p class="tp_close_menu"><a class="tp_close" onclick="teachpress_pub_showhide('447','tp_abstract')">Close</a></p>
+                    </div>
+                    <div class="tp_links" id="tp_links_447" style="display:none;">
+                        <div class="tp_links_entry">
+                            <ul class="tp_pub_list">
+                                <li><a class="tp_pub_list" style="background-image: url(/wp-content/plugins/teachpress/images/mimetypes/application-pdf.png)" href="{{ post.link }}" title="{{ post.link }}" target="_blank">{{ post.link }}</a></li>
+                            </ul>
+                        </div>
+                        <p class="tp_close_menu"><a class="tp_close" onclick="teachpress_pub_showhide('447','tp_links')">Close</a></p>
+                    </div>
+                </td>
+            </tr>
+    </li>
+    {% endfor %}
+    </table>    
+</div>

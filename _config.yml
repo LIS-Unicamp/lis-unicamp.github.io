@@ -1,6 +1,9 @@
 permalink: /:categories/:title/
+paginate: 10
+paginate_path: "publications/page:num"
 plugins:
   - jekyll-redirect-from
 exclude:
   - .git/
   - .php
+  - dev
