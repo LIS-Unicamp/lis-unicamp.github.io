@@ -10,7 +10,7 @@ def prep_list(list, separator = ", "):
 	return "[" + ",".join(['"{0}"'.format(x.encode('utf-8')) for x in list.split(separator)]) + "]"
 
 def write_file(bibtex_file):
-	list_quoting = ['year', 'ID', 'date', 'link', 'booktitle', 'title', 'editor', 'abstract']
+	list_quoting = ['year', 'ID', 'date', 'link', 'booktitle', 'title', 'editor', 'abstract', 'school', 'institution', 'number', 'type', 'pages', 'volume', 'doi', 'issn', 'isbn', 'publisher', 'address', 'issue']
 
 	for item in list_quoting:
 		if item in bib.keys():
@@ -18,6 +18,8 @@ def write_file(bibtex_file):
 				bibtex_file.write("\n" + item + ": \"" + bib[item].encode('utf-8') + "\"")
 			except:
 				print bib['ID'] + ": " + item 
+		if item == "institution":
+			print bib
 
 with open('lis.bib') as bibtex_file:
     parser = BibTexParser()
@@ -38,16 +40,15 @@ for bib in bibtex_database.entries:
 		bibtex_file.write("\ntype: " + bib['ENTRYTYPE'])
 		bibtex_file.write("\nauthors: " + prep_list(authors, "; "))
 		if 'keyword' in bib:
-			bibtex_file.write("\ntags: " + prep_list(bib['keyword']))
+			bibtex_file.write("\ntags: " + prep_list(bib['keyword'], "; "))
 		write_file(bibtex_file) 		
 		bibtex_file.write("\n---")
 		bibtex_file.write("\n{% raw %}\n")
-		db = BibDatabase()
-		
 		entries = bibtex_database.entries[i]
 		for key in entries:
 			entries[key] = entries[key].encode('utf-8')
 
+		db = BibDatabase()
 		db.entries = [entries]
 
 		try:
