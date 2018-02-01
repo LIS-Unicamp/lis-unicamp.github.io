@@ -10,16 +10,14 @@ def prep_list(list, separator = ", "):
 	return "[" + ",".join(['"{0}"'.format(x.encode('utf-8')) for x in list.split(separator)]) + "]"
 
 def write_file(bibtex_file):
-	list_quoting = ['year', 'ID', 'date', 'link', 'booktitle', 'title', 'editor', 'abstract', 'school', 'institution', 'number', 'type', 'pages', 'volume', 'doi', 'issn', 'isbn', 'publisher', 'address', 'issue']
+	list_quoting = ['year', 'ID', 'date', 'link', 'booktitle', 'title', 'editor', 'abstract', 'school', 'institution', 'number', 'type', 'pages', 'volume', 'doi', 'issn', 'journal', 'isbn', 'publisher', 'address', 'issue']
 
 	for item in list_quoting:
 		if item in bib.keys():
 			try:
-				bibtex_file.write("\n" + item + ": \"" + bib[item].encode('utf-8') + "\"")
+				bibtex_file.write("\n" + item + ": \"" + bib[item].encode('utf-8').replace("\"", "'") + "\"")
 			except:
 				print bib['ID'] + ": " + item 
-		if item == "institution":
-			print bib
 
 with open('lis.bib') as bibtex_file:
     parser = BibTexParser()
@@ -29,7 +27,7 @@ with open('lis.bib') as bibtex_file:
 
 i = 0
 for bib in bibtex_database.entries:
-	name = bib['date']+'-'+bib['ID']+'.html'
+	name = bib['date'] + '-' + bib['ID'] + '.html'
 	with open("../_posts/publications/" + name, 'w+') as bibtex_file:
 		authors = bib['author'].split(" and ")
 		authors = "; ".join(["".join(x.split(" ")[-1]) + ", " + " ".join(x.split(" ")[0:-1]) for x in authors])
