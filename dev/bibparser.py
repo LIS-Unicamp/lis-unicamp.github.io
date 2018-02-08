@@ -15,7 +15,10 @@ def write_file(bibtex_file):
 	for item in list_quoting:
 		if item in bib.keys():
 			try:
-				bibtex_file.write("\n" + item + ": \"" + bib[item].encode('utf-8').replace("\"", "'") + "\"")
+				value = bib[item].encode('utf-8').replace("\"", "'")
+				if item == 'link':
+					value = value.replace("http://www.lis.ic.unicamp.br","")
+				bibtex_file.write("\n" + item + ": \"" + value + "\"")
 			except:
 				print bib['ID'] + ": " + item 
 
