@@ -1,0 +1,17 @@
+---
+layout: default
+title: Seminars
+description: 'Seminars.'
+category: seminars
+---
+<ul id='subpages'>
+    <li class="pagenav"> 
+      <ul>
+        {% for post in site.categories.seminars %}
+           <li class="page_item page-item-818">
+              <h3>{% if post.track %}<img align="left" src="../../images/tracks/{{ post.track }}.png">{% endif %}{% if post.icon %}<img align="left" src="../../images/seminars/{{ post.icon }}">{% endif %}<i class="fa fa-level-up"></i><a href="{{ post.url }}">"{{ post.title }}" by {{ post.speaker }} ({{ post.when }})</a></h3><br>
+           </li>
+        {% endfor %}
+     </ul>
+   </li>
+</ul>

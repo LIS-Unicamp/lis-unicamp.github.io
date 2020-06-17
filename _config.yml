@@ -1,7 +1,14 @@
 permalink: /:categories/:title/
 plugins:
   - jekyll-redirect-from
+  - jekyll-paginate
 exclude:
   - .git/
   - .php
   - dev
+future: true
+defaults:
+  - scope:
+      path: "assets/img"
+    values:
+      image: true
