@@ -7,7 +7,7 @@ speaker: "Luiz Celso Gomes Jr."
 when: "June 22, 2020 at 1 pm"
 ---
 
-This talk focuses on the potential impacts of the pandemic in the economies worldwide (and in Brazil as an especial case). I will present initial assessments of the impacts, associating contries’ responses to epidemiological and economic consequences. I will also present analysis centered in the aviation sector, an important area in the economy that has already experienced serious losses. Several tools were used in the assessments, including exploratory analysis, complex networks and model optimization.
+This talk focuses on the potential impacts of the pandemic in the economies worldwide (and in Brazil as a especial case). I will present initial assessments of the impacts, associating contries’ responses to epidemiological and economic consequences. I will also present analysis centered in the aviation sector, an important area in the economy that has already experienced serious losses. Several tools were used in the assessments, including exploratory analysis, complex networks and model optimization.
 
 <hr>
 
