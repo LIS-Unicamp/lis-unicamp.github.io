@@ -1,0 +1,39 @@
+---
+categories: ["publications","2019"]
+code: "caceffo2019c"
+type: conference
+authors: ["aceffo, Ricardo", "Alves Moreira, Eliana", "Bonacin, Rodrigo", "dos Reis, Julio Cesar", "Luque Carbajal", "Marleny", "D'Abreu, João Vilhete V.", "Brennand, Camilla V. L. T.", "Lombello, Luma", "Baranauskas, Maria Cec{\'i}lia Calani"]
+tags: ["Enactive", "Educational", "Robots", "Interactive design", "Evaluation", "Ontologies", "Emotions", "HCI"]
+year: "2019"
+ID: "caceffo2019c"
+date: "2019-06-15"
+link: "https://doi.org/10.1007/978-3-030-21814-0_18"
+booktitle: "Learning and Collaboration Technologies. Designing Learning Experiences"
+title: "Collaborative Meaning Construction in Socioenactive Systems: Study with the mBot"
+abstract: "The design of interactive systems concerned with the impact of the technology on the human agent as well as the effect of the human experience on the technology is not a trivial task. Our investigation goes towards a vision of socioenactive systems, by supporting and identifying how a group of people can dynamically and seamlessly interact with the technology. In this paper, we elaborate a set of guidelines to design socioenactive systems. We apply them in the construction of a technological framework situated in an educational environment for children around the age of 5 (N = 25). The scenario was supported by educational robots, programmed to perform a set of actions mimicking human emotional expressions. The system was designed to shape the robots' behavior according to the feedback of children's responses in iterative sessions. This entails a complete cycle, where the robot impacts the children and is affected by their experiences. We found that children create hypotheses to make sense of the robot's behavior. Our results present original aspects related to a social enactive system."
+publisher: "Springer"
+---
+{% raw %}
+@InProceedings{caceffo2019c,
+  author="Caceffo, Ricardo
+  and Alves Moreira, Eliana
+  and Bonacin, Rodrigo
+  and dos Reis, Julio Cesar
+  and Luque Carbajal, Marleny
+  and D'Abreu, Jo{\~a}o Vilhete V.
+  and Brennand, Camilla V. L. T.
+  and Lombello, Luma
+  and Valente, Jos{\'e} Armando
+  and Baranauskas, Maria Cec{\'i}lia Calani",
+  editor="Zaphiris, Panayiotis
+  and Ioannou, Andri",
+  title="Collaborative Meaning Construction in Socioenactive Systems: Study with the mBot",
+  booktitle="Learning and Collaboration Technologies. Designing Learning Experiences",
+  year="2019",
+  publisher="Springer International Publishing",
+  address="Cham",
+  pages="237--255",
+  abstract="The design of interactive systems concerned with the impact of the technology on the human agent as well as the effect of the human experience on the technology is not a trivial task. Our investigation goes towards a vision of socioenactive systems, by supporting and identifying how a group of people can dynamically and seamlessly interact with the technology. In this paper, we elaborate a set of guidelines to design socioenactive systems. We apply them in the construction of a technological framework situated in an educational environment for children around the age of 5 (N = 25). The scenario was supported by educational robots, programmed to perform a set of actions mimicking human emotional expressions. The system was designed to shape the robots' behavior according to the feedback of children's responses in iterative sessions. This entails a complete cycle, where the robot impacts the children and is affected by their experiences. We found that children create hypotheses to make sense of the robot's behavior. Our results present original aspects related to a social enactive system.",
+  isbn="978-3-030-21814-0"
+}
+{% endraw %}
