@@ -1,6 +1,6 @@
 ---
 categories: ["seminars","dinotalks","2020"]
-layout: default
+type: seminars
 track: dinotalks
 title: "Reproducibility is only worth what it costs: A tale from the coding trenches"
 speaker: "Gilberto Pastorello"

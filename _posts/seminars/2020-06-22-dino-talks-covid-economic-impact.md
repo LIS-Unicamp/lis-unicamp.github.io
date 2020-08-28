@@ -1,6 +1,6 @@
 ---
 categories: ["seminars","dinotalks","2020"]
-layout: default
+type: seminars
 track: dinotalks
 title: "COVID-19 economic impact: perspectives and assessment of countries’ response and their consequences"
 speaker: "Luiz Celso Gomes Jr."

@@ -1,6 +1,6 @@
 ---
 categories: ["seminars","master","2020"]
-layout: default
+type: seminars
 track: master
 title: "Defense: An Interpretable Machine Learning Approach for Retrospective Evaluation of Inpatient Blood Loss Due to Phlebotomy Protocols"
 speaker: "Flávia Érika Almeida Giló Azevedo"

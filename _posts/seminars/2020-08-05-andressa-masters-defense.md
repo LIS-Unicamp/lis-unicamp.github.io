@@ -1,6 +1,6 @@
 ---
 categories: ["seminars","master","2020"]
-layout: default
+type: seminars
 track: master
 title: "Defense: Guidelines for the Evaluation of Systems in Socioenactive Scenarios"
 speaker: "Andressa Cristina dos Santos"

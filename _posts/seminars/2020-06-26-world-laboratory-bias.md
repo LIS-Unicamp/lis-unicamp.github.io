@@ -1,6 +1,6 @@
 ---
 categories: ["seminars","museum","2020"]
-layout: default
+type: seminars
 icon: 2020-06-26-world-laboratory-bias-icon.png
 title: "The World as a Laboratory - Plants and the promise of a cure"
 speaker: "André Santanchè"

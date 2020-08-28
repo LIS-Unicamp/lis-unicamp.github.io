@@ -1,6 +1,6 @@
 ---
 categories: ["seminars","museum","2020"]
-layout: default
+type: seminars
 icon: 2020-06-17-world-laboratory-variables-icon.png
 title: "The World as a Laboratory - First Tests in the Kitchen"
 speaker: "André Santanchè"
