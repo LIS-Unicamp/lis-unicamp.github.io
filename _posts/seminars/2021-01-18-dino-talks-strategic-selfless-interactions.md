@@ -18,6 +18,8 @@ Accordingly, analysing how people cooperate and compete is fundamental for the u
 
 #### Speaker: [Felipe Maciel Cardoso](https://fmcardoso.github.io/)
 
+![Felipe Maciel Cardoso](/images/seminars/2021-01-18-felipe-maciel-cardoso.jpg)
+
 Felipe Maciel Cardoso has recently obtained his PhD at the University of Zaragoza, Spain.  His research activity is focused on studying the laws that promote human cooperation and on assessing how individuals react to social dilemmas that pose a basic conflict between the individual and the collective. He got both his undergraduate and Master’s degrees in Computer Science at the University of Campinas, Brazil.
 
 <br>
