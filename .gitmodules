@@ -1,0 +1,4 @@
+[submodule "archive"]
+	path = archive
+	url = https://github.com/LIS-Unicamp/lis-unicamp.github.io.git
+	branch = lis-2022
